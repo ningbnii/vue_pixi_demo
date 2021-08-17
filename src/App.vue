@@ -15,6 +15,7 @@
 </script>
 
 <style>
+    *{padding: 0;margin: 0;}
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -25,8 +26,8 @@
         -webkit-user-select:none;-moz-user-select:none;user-select:none;
     }
     canvas{
-        width: 100vw;
-        height: 100vh;
+        /*width: 100vw;*/
+        /*height: 100vh;*/
         flex: 1;
         position: absolute;
     }

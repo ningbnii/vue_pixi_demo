@@ -22,9 +22,21 @@
                 antialias:true, // 反锯齿，默认false，
                 transparent:false, // 透明，默认false
                 resolution:1, // 分辨率，默认1
-                backgroundColor:0xff0000
+                // backgroundColor:0xff0000
             });
             document.getElementById('stage').appendChild(app.view);
+            // 更改画布背景颜色
+            app.renderer.backgroundColor = 0xffff00;
+            // 查看画布的宽度和高度
+            console.log(app.renderer.view.width)
+            console.log(app.renderer.view.height)
+            // 更改画布大小
+            app.renderer.autoResize = true;
+            app.renderer.resize(100,100);
+            // 让画布填充整个窗口，可以使用css样式并将渲染器的大小调整到浏览器窗口的大小
+            app.renderer.view.style.position = "absolute";
+            app.renderer.view.style.display = "block";
+            app.renderer.resize(window.innerWidth,window.innerHeight);
         },
         methods: {
 
