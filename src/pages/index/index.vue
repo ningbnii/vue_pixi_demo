@@ -7,7 +7,7 @@
             <router-link to="/index/stage">创建舞台</router-link>
         </p>
         <p>
-            <router-link to="/index/pulse">脉冲动画</router-link>
+            <router-link to="/index/sprite">精灵</router-link>
         </p>
         <p>
             <router-link to="/index/random">两个角的波</router-link>
